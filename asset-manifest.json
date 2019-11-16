@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/website/react-game-of-life/static/css/main.ea939bfe.chunk.css",
-    "main.js": "/website/react-game-of-life/static/js/main.75441e12.chunk.js",
-    "main.js.map": "/website/react-game-of-life/static/js/main.75441e12.chunk.js.map",
-    "runtime-main.js": "/website/react-game-of-life/static/js/runtime-main.bdf1610f.js",
-    "runtime-main.js.map": "/website/react-game-of-life/static/js/runtime-main.bdf1610f.js.map",
-    "static/js/2.7155bd10.chunk.js": "/website/react-game-of-life/static/js/2.7155bd10.chunk.js",
-    "static/js/2.7155bd10.chunk.js.map": "/website/react-game-of-life/static/js/2.7155bd10.chunk.js.map",
-    "index.html": "/website/react-game-of-life/index.html",
-    "precache-manifest.633864d78d9222edb8b639a21649d7a7.js": "/website/react-game-of-life/precache-manifest.633864d78d9222edb8b639a21649d7a7.js",
-    "service-worker.js": "/website/react-game-of-life/service-worker.js",
-    "static/css/main.ea939bfe.chunk.css.map": "/website/react-game-of-life/static/css/main.ea939bfe.chunk.css.map"
+    "main.css": "/react-game-of-life/static/css/main.ea939bfe.chunk.css",
+    "main.js": "/react-game-of-life/static/js/main.712cc10b.chunk.js",
+    "main.js.map": "/react-game-of-life/static/js/main.712cc10b.chunk.js.map",
+    "runtime-main.js": "/react-game-of-life/static/js/runtime-main.a2937be5.js",
+    "runtime-main.js.map": "/react-game-of-life/static/js/runtime-main.a2937be5.js.map",
+    "static/js/2.7155bd10.chunk.js": "/react-game-of-life/static/js/2.7155bd10.chunk.js",
+    "static/js/2.7155bd10.chunk.js.map": "/react-game-of-life/static/js/2.7155bd10.chunk.js.map",
+    "index.html": "/react-game-of-life/index.html",
+    "precache-manifest.2e53fce4f38daf38929d961933a5666f.js": "/react-game-of-life/precache-manifest.2e53fce4f38daf38929d961933a5666f.js",
+    "service-worker.js": "/react-game-of-life/service-worker.js",
+    "static/css/main.ea939bfe.chunk.css.map": "/react-game-of-life/static/css/main.ea939bfe.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.bdf1610f.js",
+    "static/js/runtime-main.a2937be5.js",
     "static/js/2.7155bd10.chunk.js",
     "static/css/main.ea939bfe.chunk.css",
-    "static/js/main.75441e12.chunk.js"
+    "static/js/main.712cc10b.chunk.js"
   ]
 }
