@@ -28,7 +28,7 @@
   position: relative;
   height: 100%;
   width: 100%;
-  overflow: auto; 
+  overflow: hidden; 
 }
 
 .cell {
@@ -38,14 +38,17 @@
 .cellControl {
   width: 50px;
   height: 50px;
+  border: 1px solid #000;
+}
+
+.cellControlInput {
+  width: 50px;
 }
 
 .false {
   background: #999;
-  border: 1px solid #999;
 }
 
 .true {
   background: #333;
-  border: 1px solid #333;
 }
