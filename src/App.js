@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef, useMemo } from 'react';
+import React, {useState, useEffect, useRef } from 'react';
 import BoardContainer from './components/BoardContainer'
 import ControlsContainer from './components/ControlsContainer'
 import  { idbKeyval } from './indexDB/'
