@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
 
 const ControlsContainer = ({speed, size, save, load, offColor, onColor, handleSpeedSliderChange, handleSizeSliderChange, handleClear, handleRandom, handleOnColorChange, handleOffColorChange}) => {
   const classes = useStyles();
-  const [inputValues, setInputValues] = useState({"off": '#', 'on': '#'})
+  const [inputValues, setInputValues] = useState({"off": offColor, 'on':  onColor})
 
   const handleInputChange = event => {
     let id = event.target.id
