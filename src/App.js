@@ -3,14 +3,25 @@ import BoardContainer from './components/BoardContainer'
 import ControlsContainer from './components/ControlsContainer'
 import  { idbKeyval } from './indexDB/'
 import './App.css';
+import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    padding: theme.spacing(3, 2),
+    margin: "5%"
+  }
+}));
 
 function App() {
   //sets colors, speed, size
-  const [offColor, setOffColor] = useState("#aaa")
-  const [onColor, setOnColor] = useState("#333")
-  const [speed, setSpeed] = useState(15);
-  const [size, setSize] = useState(15);
+  const [offColor, setOffColor] = useState('#003')//'#'+(Math.random()*0xFFFFFF<<0).toString(16).slice(0,3))
+  const [onColor, setOnColor] = useState('#aaa')//'#'+(Math.random()*0xFFFFFF<<0).toString(16).slice(0,3))
+  const [speed, setSpeed] = useState(100);
+  const [size, setSize] = useState(40);
   const [grid, setGrid] = useState(null)
+  const classes = useStyles();
 
   //gridRef required for timer calls
   const gridRef = useRef(grid);
@@ -106,6 +117,7 @@ function App() {
   }
 
   const rebuildGrid = (option = null) => {
+    console.log('build')
     let newGrid = []
     for(let row = 0; row < Math.floor(boardRef.current.clientHeight/(boardRef.current.clientWidth/(size+5))); row++) {
       newGrid[row] = []
@@ -148,6 +160,15 @@ function App() {
         handleOffColorChange={handleOffColorChange}
         handleOnColorChange={handleOnColorChange}
       />
+      <Paper className={classes.root}>
+        <Typography variant="body1">
+          The Game of Life is a cellular automation game designed by John Conway in 1970. The game follows simple rules: each 'cell' can be OFF or ON ('dead' or 'alive'). Whether or not a cell is ON is determined by how many neighboring cells are ON. An OFF cell will turn ON if it has exactly three neighboring cells that are ON. An ON cell will stay on if there are two or three neighboring cells that are ON. Otherwise, the cell turns or stays OFF.
+        </Typography>
+        <br/>
+        <Typography variant="body1">
+          While these rules are simple, it is possible for highly complex patterns to develop, including patterns that can sustain themselves, 'travel' across the board, and even create other self-sustaining patterns. It is theoretically possible to create complete Turing machines using the patterns that can exist in this 2d world.
+        </Typography>
+      </Paper>
     </div>
   );
 }
