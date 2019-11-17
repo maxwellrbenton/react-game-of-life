@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import Cell from './Cell'
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -61,6 +62,7 @@ const BoardContainer = ({speed, size, grid, offColor, onColor, handleCellClick, 
 
   return (
     <Paper className={classes.root + " BoardContainer"} >
+      <Typography variant="h4">The Game of Life (in React)</Typography>
       <div ref={boardRef} onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}className="Board">
         {grid ? renderCells() : null}
       </div>
